@@ -8,7 +8,7 @@ print('Initializing Job Search Ai agent')
 
 llm = LLM(
     model="groq/llama-3.3-70b-versatile",
-    api_key="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",
+    api_key=os.getenv("GROQ_API_KEY"),
     temperature=0.8
 )
 print("AI MODEL(Groq )initialized !!")
